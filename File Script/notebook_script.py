@@ -60,17 +60,17 @@ print(f"Number of rows: {rows} \nNumber of columns: {cols}")
 # %%
 # display data overview
 print("Data overview:")
-display(df.sample(3))
+df.sample(3)
 
 # %%
 # display categorical data summary
 print("Categorical data summary:")
-display(categoric.describe())
+categoric.describe()
 
 # %%
 # display numerical data summary
 print("Numerical data summary:")
-display(numeric.describe())
+numeric.describe()
 
 # %% [markdown]
 # ### Types of Data
@@ -1134,7 +1134,7 @@ test_y['loan_status'] = test_y['loan_status'].map(lstatus_map)
 
 # 10. results
 print(test_X_scaled.shape)
-display(test_X_scaled.sample(3))
+test_X_scaled.sample(3)
 
 # %% [markdown]
 # ##### Apply to X and y for Cross Validation
@@ -1186,7 +1186,7 @@ y['loan_status'] = y['loan_status'].map(lstatus_map)
 
 # 10. results
 print(X_scaled.shape)
-display(X_scaled.sample(3))
+X_scaled.sample(3)
 
 # %% [markdown]
 # ## 5. Modeling
@@ -1286,7 +1286,7 @@ for model in models:
 # display the models score
 models_result = pd.concat(results).reset_index(drop=True)
 models_result.index = models_result.index + 1
-display(models_result)
+print(models_result)
 
 # plot roc curve
 fig, ax = plt.subplots(figsize=(8, 6))
@@ -1344,7 +1344,7 @@ for tun in threshold_tun:
 # display the models score
 models_result = pd.concat(results).reset_index(drop=True)
 models_result.index = models_result.index + 1
-display(models_result)
+print(models_result)
 
 # %% [markdown]
 # From these experiments we get the most optimal threshold at **0.5**, this number is able to balance recall and precision better.
