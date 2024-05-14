@@ -1,5 +1,5 @@
 # Project Based Internship ID/X Partners x Rakamin Academy
-# Final Task: Minimazing Credit Risk Through Client Classification
+# Final Task: Minimizing Credit Risk Through Client Classification
 
 This project is a collaboration between IDX Partners and Rakamin Academy in the framework of Project-Based Internship (PBI) for Data Science.
 
